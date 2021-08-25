@@ -30,14 +30,14 @@ for (let i = 0; i < 100; i++) {
         }
     }
 
-    lista.push(['Igor Martins', 'treku@treku.com.br', status])
+    lista.push(['Igor Martins', 'teste@teste.com.br', status])
 }
 
 const printer = new PdfPrinter(fonts)
 const docDefinition = {
     content: [
         {
-            image: 'images/greg.jpg',
+            image: 'images/test.jpg',
             //height: 200,
             //width: 200
             fit: [200, 200]
@@ -82,7 +82,7 @@ const docDefinition = {
 
 /*
 const pdf = printer.createPdfKitDocument(docDefinition)
-pdf.pipe(fs.WriteStream('treku.pdf'))
+pdf.pipe(fs.WriteStream('teste.pdf'))
 pdf.end()
 */
 
